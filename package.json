@@ -1,0 +1,35 @@
+{
+  "name": "hfc-rest-service",
+  "version": "1.0.0",
+  "description": "REST API services project for HLF V1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "REST",
+    "TypeScript",
+    "Express",
+    "hfc"
+  ],
+  "author": "suddutt1@in.ibm.com",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mongodb": "^2.2.13",
+    "cfenv": "^1.0.4",
+    "debug": "^3.1.0",
+    "express": "^4.16.1",
+    "fabric-ca-client": "^1.0.2",
+    "fabric-client": "^1.0.2",
+    "log4js": "^0.6.38",
+    "mongodb": "^2.2.32",
+    "typescript": "^2.5.3",
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/express": "^4.0.37",
+    "@types/node": "^6.0.89"
+  }
+}

@@ -1,0 +1,71 @@
+{
+	"network-config": {
+		"orderer": [{
+				"url": "grpcs://localhost:7050",
+				"server-hostname": "orderer.ironmountain.com",
+				"tls_cacerts": "../crypto-config/ordererOrganizations/ironmountain.com/orderers/orderer.ironmountain.com/tls/ca.crt"
+			}
+		],
+		"originator": {
+			"name": "Originator",
+			"mspid": "OriginatorMSP",
+			"ca": "https://localhost:7054",
+			"peer1": {
+				"requests": "grpcs://localhost:7051",
+				"events": "grpcs://localhost:7053",
+				"server-hostname": "peer0.originator.com",
+				"tls_cacerts": "../crypto-config/peerOrganizations/originator.com/peers/peer0.originator.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "../crypto-config/peerOrganizations/originator.com/users/Admin@originator.com/msp/keystore",
+				"cert": "../crypto-config/peerOrganizations/originator.com/users/Admin@originator.com/msp/signcerts"
+			}
+		},
+		"custodian": {
+			"name": "Custodian",
+			"mspid": "CustodianMSP",
+			"ca": "https://localhost:9054",
+			"peer1": {
+				"requests": "grpcs://localhost:9051",
+				"events": "grpcs://localhost:9053",
+				"server-hostname": "peer0.custodian.com",
+				"tls_cacerts": "../crypto-config/peerOrganizations/custodian.com/peers/peer0.custodian.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "../crypto-config/peerOrganizations/custodian.com/users/Admin@custodian.com/msp/keystore",
+				"cert": "../crypto-config/peerOrganizations/custodian.com/users/Admin@custodian.com/msp/signcerts"
+			}
+		},
+		"trustee": {
+			"name": "Trustee",
+			"mspid": "TrusteeMSP",
+			"ca": "https://localhost:8054",
+			"peer1": {
+				"requests": "grpcs://localhost:8051",
+				"events": "grpcs://localhost:8053",
+				"server-hostname": "peer0.trustee.com",
+				"tls_cacerts": "../crypto-config/peerOrganizations/trustee.com/peers/peer0.trustee.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "../crypto-config/peerOrganizations/trustee.com/users/Admin@trustee.com/msp/keystore",
+				"cert": "../crypto-config/peerOrganizations/trustee.com/users/Admin@trustee.com/msp/signcerts"
+			}
+		},
+		"investor": {
+			"name": "Investor",
+			"mspid": "InvestorMSP",
+			"ca": "https://localhost:10054",
+			"peer1": {
+				"requests": "grpcs://localhost:10051",
+				"events": "grpcs://localhost:10053",
+				"server-hostname": "peer0.investor.com",
+				"tls_cacerts": "../crypto-config/peerOrganizations/investor.com/peers/peer0.investor.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "../crypto-config/peerOrganizations/investor.com/users/Admin@investor.com/msp/keystore",
+				"cert": "../crypto-config/peerOrganizations/investor.com/users/Admin@investor.com/msp/signcerts"
+			}
+		}
+
+	}
+}

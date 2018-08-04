@@ -1,0 +1,11 @@
+{
+    "custodian_USER1":"../crypto-config/peerOrganizations/custodian.com/users/User1@custodian.com",
+    "investor_USER1":"../crypto-config/peerOrganizations/investor.com/users/User1@investor.com",
+    "trustee_USER1":"../crypto-config/peerOrganizations/trustee.com/users/User1@trustee.com",
+    "originator_USER1":"../crypto-config/peerOrganizations/originator.com/users/User1@originator.com",
+    "custodian_ADMIN":"../crypto-config/peerOrganizations/custodian.com/users/Admin@custodian.com",
+    "investor_ADMIN":"../crypto-config/peerOrganizations/investor.com/users/Admin@investor.com",
+    "trustee_ADMIN":"../crypto-config/peerOrganizations/trustee.com/users/Admin@trustee.com",
+    "originator_ADMIN":"../crypto-config/peerOrganizations/originator.com/users/Admin@originator.com"
+    
+}
